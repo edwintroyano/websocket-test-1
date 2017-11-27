@@ -19,7 +19,7 @@ Both will start the server in the foreground (as part of the maven build)
 
 This creates a Websocket client that connect to the server, on connection, the server reply with a Text message that print to the log:
 
->>> Websocket client received message Hello world
+`>>> Websocket client received message Hello world`
 
 **To test "sendObject (POJO)" :**
 
