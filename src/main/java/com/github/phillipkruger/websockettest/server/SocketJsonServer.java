@@ -1,7 +1,6 @@
 package com.github.phillipkruger.websockettest.server;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.UUID;
 import java.util.logging.Level;
 import javax.json.Json;
@@ -14,7 +13,7 @@ import javax.websocket.server.ServerEndpoint;
 import lombok.extern.java.Log;
 
 @Log
-@ServerEndpoint(value = "/test/json",encoders = {JsonEncoder.class})
+@ServerEndpoint(value = "/test/json",encoders = {AnotherJsonEncoder.class,JsonEncoder.class})
 public class SocketJsonServer {
     
     @OnOpen
